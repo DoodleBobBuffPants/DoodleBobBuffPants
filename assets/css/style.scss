@@ -4,15 +4,29 @@
 
 @import "jekyll-theme-midnight";
 
+h1 {
+    margin: 30px 0px;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.section-padding {
+    padding: 30px 0px 0px 0px !important;
+}
+
 .container {
-    margin: 10px auto;
+    margin: 10px auto !important;
     max-width: 600px;
     text-align: center;
 }
 
-h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
+.socials {
+    margin: 10px auto !important;
+    text-align: center;
+}
+
+.black {
+    color: black;
 }
