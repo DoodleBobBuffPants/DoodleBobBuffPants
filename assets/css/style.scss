@@ -28,6 +28,11 @@ h1 {
     margin: 20px 0px 20px 0px;
 }
 
+.books {
+    column-count: 3;
+    column-gap: 100px;
+}
+
 .socials {
     margin: 10px auto !important;
     text-align: center;
