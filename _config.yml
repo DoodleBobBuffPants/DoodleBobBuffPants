@@ -3,20 +3,46 @@ description: >-
 
 baseurl: ""
 url: ""
-github_username:  DoodleBobBuffPants
+github_username: DoodleBobBuffPants
+
+books:                   # Uses openlibrary
+  - edition: OL8149689M  # 5 Dysfunctions of a Team
+    cover: 549590
+  - edition: OL21221785W # A philosophy of Software Design
+    cover: 10352230
+  - edition: OL19542983W # Accelerate
+    cover: 8509069
+  - edition: OL16534596W # Antipatterns
+    cover: 7077751
+  - edition: OL8955989W  # C# in Depth
+    cover: 3063781
+  - edition: OL17618370W # Clean Code
+    cover: 5547794
+  - edition: OL19542960W # Design It!
+    cover: 8509028
+  - edition: OL21406710W # Design Patterns
+    cover: 1754351
+  - edition: OL25783599W # Effective Java
+    cover: 12603105
+  - edition: OL20872782W # Fundamentals of Software Architecture
+    cover: 10193363
+  - edition: OL15359393W # Gamestorming
+    cover: 6463746
+  - edition: OL19545691W # More Effective C#
+    cover: 8511863
+  - edition: OL20793797W # Multipliers
+    cover: 10087916
+  - edition: OL17803541W # Radical Candor
+    cover: 9402323
+  - edition: OL24199831W # Staff Engineer
+    cover: 10637714
+  - edition: OL19860807W # The Manager's Path
+    cover: 8667305
+  - edition: OL16806686W # The Phoenix Project
+    cover: 8090274
+  - edition: OL28014943M # The Unicorn Project
+    cover: 9398045
 
 theme: jekyll-theme-midnight
 plugins:
   - jekyll-feed
-
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/

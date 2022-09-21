@@ -13,29 +13,35 @@ h1 {
 }
 
 .section-padding {
-    padding: 30px 0px 0px 0px !important;
+    padding: 30px 0px 0px 0px;
 }
 
-.container {
-    margin: 10px auto !important;
-    max-width: 600px;
-    text-align: center;
+.title {
+    color: inherit;
+    text-decoration: inherit;
 }
 
-.links {
+.homepage {
     display: flex;
     justify-content: space-around;
-    margin: 20px 0px 20px 0px;
 }
 
-.books {
-    column-count: 3;
-    column-gap: 100px;
+.book-list-title {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .socials {
-    margin: 10px auto !important;
     text-align: center;
+    margin-top: 60px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.centered-vertical {
+    margin: auto;
 }
 
 .black {

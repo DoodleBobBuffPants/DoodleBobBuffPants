@@ -2,55 +2,26 @@
 layout: homepage
 ---
 
-<div class="container">
-    <a class="thumbnail">
-        <img itemprop="image" src="https://avatars2.githubusercontent.com/u/17652619?v=4&s=300">
-    </a>
+<div class="homepage">
+    <img src="https://avatars2.githubusercontent.com/u/17652619?v=4&s=300">
 
-    <div class="links">
-        <div>
-            Projects
-            <ul>
-                <li><a href="https://github.com/DoodleBobBuffPants/CypherSQL" target="_blank">CypherSQL</a></li>
-                <li><a href="https://github.com/DoodleBobBuffPants/WhatIfDriver" target="_blank">WhatIfDriver</a></li>
-                <li><a href="https://github.com/DoodleBobBuffPants/Database" target="_blank">Database</a></li>
-                <li><a href="https://github.com/DoodleBobBuffPants/DatabaseSharp" target="_blank">Database#</a></li>
-                <li><a href="https://github.com/DoodleBobBuffPants/ReactProfile" target="_blank">ReactProfile</a></li>
-            </ul>
-        </div>
-        <div>
-            Posts
-            <ul>
-                {% for post in site.posts %}
-                <li><a href="{{ post.url }}" target="_blank">{{ post.title }}</a></li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
+    <ul class="centered-vertical">
+        <li>Projects</li>
+        <ul>
+            <li><a href="https://github.com/DoodleBobBuffPants/CypherSQL" target="_blank">CypherSQL</a></li>
+            <li><a href="https://github.com/DoodleBobBuffPants/WhatIfDriver" target="_blank">WhatIfDriver</a></li>
+            <li><a href="https://github.com/DoodleBobBuffPants/Database" target="_blank">Database</a></li>
+            <li><a href="https://github.com/DoodleBobBuffPants/DatabaseSharp" target="_blank">Database#</a></li>
+            <li><a href="https://github.com/DoodleBobBuffPants/ReactProfile" target="_blank">ReactProfile</a></li>
+        </ul>
 
-    <div class="links">
-        <div>
-            Book list
-            <ul class="books">
-                <li>5 Dysfunctions of a Team</li>
-                <li>A Philosophy of Software Design</li>
-                <li>Accelerate</li>
-                <li>Antipatterns</li>
-                <li>C# in Depth</li>
-                <li>Clean Code</li>
-                <li>Design Patterns</li>
-                <li>Effective Java</li>
-                <li>Fundamentals of Software Architecture</li>
-                <li>Design It!</li>
-                <li>Gamestorming</li>
-                <li>More Effective C#</li>
-                <li>Multipliers</li>
-                <li>Radical Candor</li>
-                <li>Staff Engineer</li>
-                <li>The Manager's Path</li>
-                <li>The Phoenix Project</li>
-                <li>The Unicorn Project</li>
-            </ul>
-        </div>
-    </div>
+        <li>Posts</li>
+        <ul>
+            {% for post in site.posts %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+
+        <li><a href="/book-list">Books I have read</a></li>
+    </ul>
 </div>

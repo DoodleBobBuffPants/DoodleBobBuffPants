@@ -8,6 +8,7 @@
         {% seo %}
         <link rel="stylesheet" href="{{ '/assets/css/style.css' }}">
         <link rel="stylesheet" href="{{ '/assets/fontawesome/css/font-awesome.min.css' }}">
+        <link rel="shortcut icon" type="image/png" href="https://avatars2.githubusercontent.com/u/17652619?v=4&s=300">
         <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
         <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
         <!--[if lt IE 9]>
@@ -25,7 +26,7 @@
         <div class="wrapper">
             <section class="section-padding">
                 <div id="title">
-                    <h1>{{ site.title }}</h1>
+                    <h1><a href="/" class="title">{{ site.title }}</a></h1>
                     <hr>
                 </div>
                 {{ content }}

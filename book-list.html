@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<h2 class="book-list-title">Books I have read</h2>
+
+<div class="centered">
+    {% for book in site.books %}
+    <a href="https://openlibrary.org/books/{{ book.edition }}" target="_blank">
+        <img src="https://covers.openlibrary.org/b/id/{{ book.cover }}-L.jpg" width="200" height="300" />
+    </a>
+    {% endfor %}
+</div>
