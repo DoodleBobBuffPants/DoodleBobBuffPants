@@ -1,0 +1,20 @@
+.home {
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-picture {
+  border-radius: 200px;
+}
+
+.socials {
+  margin: 60px auto auto;
+}
+
+li {
+  @apply list-disc text-yellow-200;
+}
+
+ul > ul {
+  @apply ml-5 mb-5;
+}

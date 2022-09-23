@@ -1,0 +1,31 @@
+div {
+  @apply overflow-x-hidden;
+}
+
+.markdown {
+  @apply text-white;
+  h1 {
+    @apply text-center text-2xl text-yellow-200 mb-5;
+  }
+  h2 {
+    @apply text-xl text-yellow-200 mb-5;
+  }
+  h3 {
+    @apply text-lg text-yellow-200 mb-5;
+  }
+  h4 {
+    @apply text-base text-yellow-200 mb-5;
+  }
+  p, pre {
+    @apply mb-5;
+  }
+  code {
+    @apply text-gray-400 italic;
+  }
+  ul {
+    @apply pl-10 mb-20;
+  }
+  li {
+    @apply list-disc text-yellow-400;
+  }
+}

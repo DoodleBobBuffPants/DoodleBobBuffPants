@@ -1,0 +1,16 @@
+.book-title {
+  @apply text-center text-2xl text-yellow-200;
+  margin-bottom: 30px;
+}
+
+.books {
+  @apply overflow-x-auto pb-10;
+  white-space: nowrap;
+  >a {
+    @apply text-center text-yellow-200 mr-12;
+    display: inline-block;
+    >img {
+      @apply mb-5;
+    }
+  }
+}
