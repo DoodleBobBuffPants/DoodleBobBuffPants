@@ -1,27 +1,14 @@
----
-layout: homepage
----
-
-<div class="homepage">
-    <img src="https://avatars2.githubusercontent.com/u/17652619?v=4&s=300">
-
-    <ul class="centered-vertical">
-        <li>Projects</li>
-        <ul>
-            <li><a href="https://github.com/DoodleBobBuffPants/CypherSQL" target="_blank">CypherSQL</a></li>
-            <li><a href="https://github.com/DoodleBobBuffPants/WhatIfDriver" target="_blank">WhatIfDriver</a></li>
-            <li><a href="https://github.com/DoodleBobBuffPants/Database" target="_blank">Database</a></li>
-            <li><a href="https://github.com/DoodleBobBuffPants/DatabaseSharp" target="_blank">Database#</a></li>
-            <li><a href="https://github.com/DoodleBobBuffPants/ReactProfile" target="_blank">ReactProfile</a></li>
-        </ul>
-
-        <li>Posts</li>
-        <ul>
-            {% for post in site.posts %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-        </ul>
-
-        <li><a href="/book-list">Books I have read</a></li>
-    </ul>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link rel="shortcut icon" type="image/png" href="https://avatars2.githubusercontent.com/u/17652619?v=4&s=300">
+	    <title>DoodleBobBuffPants</title>
+	</head>
+	<body>
+	    <div id="root"></div>
+	    <noscript>You need to enable JavaScript to run this</noscript>
+	    <script src="./bundle.js"></script>
+	</body>
+</html>
