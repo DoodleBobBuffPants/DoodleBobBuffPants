@@ -1,7 +1,14 @@
 module.exports = {
   preset: 'ts-jest',
-  testEnvironment: 'node',
+  testEnvironment: 'jsdom',
   moduleDirectories: ['node_modules', 'src'],
-  passWithNoTests: true,
-  testTimeout: 60 * 1000
+  setupFiles: ["./setupJest.js"],
+  moduleNameMapper: {
+    '\\.(s(a|c)ss|css)$': 'babel-jest',
+    'react-markdown': 'Mocks/fragment.tsx',
+    'react-syntax-highlighter': 'Mocks/dummy.tsx'
+  },
+  transform: {
+    '\\.md$': '<rootDir>/src/Mocks/markdown.js'
+  }
 };

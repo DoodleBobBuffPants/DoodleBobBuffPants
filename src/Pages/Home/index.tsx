@@ -25,7 +25,7 @@ const Home = () => {
         <ul>
           {
             getPostNames().map(post => {
-              const match = post.match("/posts/(\\d+)-(\\d+)-(\\d+)-(.+).md")!;
+              const match = post.match("posts/(\\d+)-(\\d+)-(\\d+)-(.+).md")!;
               const path = `/${match[1]}/${match[2]}/${match[3]}/${match[4]}`
               return <li key={post}><Link className="link" to={path}>{match[4].replaceAll("-", " ")}</Link></li>
             })
@@ -45,4 +45,4 @@ const getPostNames = () : string[] => {
   return Object.keys(posts).map(k => posts[k as Key]);
 }
 
-export { Home };
+export { Home, getPostNames };
