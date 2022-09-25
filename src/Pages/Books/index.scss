@@ -1,14 +1,11 @@
 .book-title {
-  @apply text-center text-2xl text-yellow-200;
-  margin-bottom: 30px;
+  @apply text-center text-2xl mb-8;
 }
 
 .books {
-  @apply overflow-x-auto pb-10;
-  white-space: nowrap;
+  @apply overflow-x-auto whitespace-nowrap pb-10;
   >a {
-    @apply text-center text-yellow-200 mr-12;
-    display: inline-block;
+    @apply text-center inline-block mr-12;
     >img {
       @apply mb-5;
     }

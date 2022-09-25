@@ -1,18 +1,13 @@
 .home {
-  display: flex;
-  justify-content: space-around;
+  @apply flex justify-around;
 }
 
 .profile-picture {
-  border-radius: 200px;
+  @apply rounded-full;
 }
 
 .socials {
-  margin: 60px auto auto;
-}
-
-li {
-  @apply list-disc text-yellow-200;
+  @apply my-16 mx-auto;
 }
 
 ul > ul {

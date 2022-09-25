@@ -10,7 +10,7 @@ const Books = () => {
       <div className="books">
         {
           books.map(book =>
-            <a href={`https://openlibrary.org/books/${book.edition}`} target="_blank" key={book.edition}>
+            <a href={`https://openlibrary.org/books/${book.edition}`} target="_blank" className="link" key={book.edition}>
               <img src={`https://covers.openlibrary.org/b/id/${book.cover}-L.jpg`} width="200" height="300" alt={book.title} />
               {book.title}
             </a>

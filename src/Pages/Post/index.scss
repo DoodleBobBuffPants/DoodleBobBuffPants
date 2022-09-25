@@ -3,29 +3,25 @@ div {
 }
 
 .markdown {
-  @apply text-white;
   h1 {
-    @apply text-center text-2xl text-yellow-200 mb-5;
+    @apply text-center text-2xl mb-5;
   }
   h2 {
-    @apply text-xl text-yellow-200 mb-5;
+    @apply text-xl mb-5;
   }
   h3 {
-    @apply text-lg text-yellow-200 mb-5;
+    @apply text-lg mb-5;
   }
   h4 {
-    @apply text-base text-yellow-200 mb-5;
+    @apply text-base mb-5;
   }
   p, pre {
     @apply mb-5;
   }
   code {
-    @apply text-gray-400 italic;
+    @apply italic;
   }
   ul {
     @apply pl-10 mb-20;
-  }
-  li {
-    @apply list-disc text-yellow-400;
   }
 }
