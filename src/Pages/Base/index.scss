@@ -13,6 +13,9 @@
   >div {
     @apply col-start-2 col-end-2;
   }
+  >div:nth-child(1) {
+    @apply col-start-1 col-end-1;
+  }
 }
 
 li {

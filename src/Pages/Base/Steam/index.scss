@@ -1,0 +1,18 @@
+.steam {
+  @apply rounded-3xl mx-8 p-8 h-fit;
+  .profile_customization_header {
+    @apply text-center text-2xl pb-2;
+  }
+  .showcase_content_bg {
+    @apply flex flex-row flex-wrap;
+  }
+  .showcase_achievement {
+    @apply w-14 h-14 m-1;
+  }
+  .plus_more {
+    @apply flex items-center;
+  }
+  .showcase_stats_row {
+    @apply flex-wrap justify-between pt-2;
+  }
+}
