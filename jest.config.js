@@ -4,7 +4,7 @@ module.exports = {
   moduleDirectories: ['node_modules', 'src'],
   setupFiles: ["./setupJest.js"],
   moduleNameMapper: {
-    '\\.(s(a|c)ss|css)$': 'babel-jest',
+    '\\.(s[ac]ss|css)$': 'babel-jest',
     'react-markdown': 'Mocks/fragment.tsx',
     'react-syntax-highlighter': 'Mocks/dummy.tsx'
   },

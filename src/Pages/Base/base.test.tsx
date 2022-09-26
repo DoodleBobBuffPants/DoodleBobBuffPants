@@ -4,11 +4,11 @@ import { render } from '@testing-library/react';
 import { Base } from './index';
 
 it('Renders the title', () => {
-  const result = render(<Base children={<></>} />, { wrapper: BrowserRouter });
+  const result = render(<Base children={<div />} />, { wrapper: BrowserRouter });
   expect(result.getByText("DoodleBobBuffPants")).toBeDefined();
 });
 
 it('Renders children', () => {
-  const result = render(<Base children={<div title="test"></div>} />, { wrapper: BrowserRouter });
+  const result = render(<Base children={<div title="test" />} />, { wrapper: BrowserRouter });
   expect(result.getByTitle("test")).toBeDefined();
 });

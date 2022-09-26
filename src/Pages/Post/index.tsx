@@ -14,9 +14,7 @@ const Post = () => {
     const originalTitle = document.title;
     document.title = params.title!;
     updatePost(params, setPost);
-    return () => {
-      document.title = originalTitle;
-    }
+    return () => { document.title = originalTitle; }
   }, []);
 
   return <Base>
@@ -42,7 +40,8 @@ const Post = () => {
 const updatePost = (params : Params<string>, setPost : (post: string) => void) => {
   fetch(`/posts/${params.year}-${params.month}-${params.day}-${params.title}.md`)
     .then(result => result.text())
-    .then(text => setPost(text));
+    .then(text => setPost(text))
+    .catch(error => console.error(error));
 }
 
 export { Post };

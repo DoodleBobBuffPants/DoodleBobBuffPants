@@ -5,9 +5,7 @@ let cachedAchievements : Element;
 
 const Steam = () => {
   const [achievements, setAchievements] = useState<Element>(cachedAchievements);
-
   useEffect(() => updateAchievements(setAchievements), []);
-
   return achievements ? <div className="steam" ref={ ref => ref?.append(achievements)}/> : <div />
 }
 
