@@ -1,0 +1,39 @@
+.christmas#root {
+  @apply text-green-800 font-bold;
+}
+.christmas {
+  .background, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {
+    @apply bg-gradient-to-br from-red-500 via-green-500 to-red-500;
+  }
+  .steam {
+    @apply bg-gradient-to-br from-red-500 via-green-500 to-red-500 shadow-green-800;
+  }
+
+  .title {
+    @apply decoration-green-800;
+  }
+
+  .link {
+    @apply text-red-800;
+  }
+
+  .linkedin {
+    @apply text-green-800;
+  }
+
+  .markdown {
+    p {
+      @apply text-red-800;
+    }
+    code {
+      @apply text-green-800;
+    }
+    li {
+      @apply text-red-800;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    @apply block;
+  }
+}

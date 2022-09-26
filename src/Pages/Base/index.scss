@@ -1,4 +1,6 @@
-@import './Themes/orange.scss';
+@import './Themes/summer.scss';
+@import './Themes/halloween.scss';
+@import './Themes/christmas.scss';
 
 .background {
   @apply w-screen min-h-screen pt-28;
@@ -23,9 +25,8 @@ li {
 }
 
 ::-webkit-scrollbar {
-  @apply w-4 h-4;
+  @apply hidden;
 }
-
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {
   @apply rounded-xl;
 }
