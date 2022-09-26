@@ -6,7 +6,7 @@ module.exports = {
   moduleNameMapper: {
     '\\.(s[ac]ss|css)$': 'babel-jest',
     'react-markdown': 'Mocks/fragment.tsx',
-    'react-syntax-highlighter': 'Mocks/dummy.tsx'
+    '(react-syntax-highlighter|\\.gif$)': 'Mocks/dummy.tsx'
   },
   transform: {
     '\\.md$': '<rootDir>/src/Mocks/markdown.js'

@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { Steam } from "./Steam";
+import { Theme } from "./Themes";
 import "./index.scss";
 
 interface Props {
@@ -13,6 +14,7 @@ const Base = (props : Props) => {
     <div className="body">
       <Steam />
       { props.children }
+      <Theme />
     </div>
   </div>
 }

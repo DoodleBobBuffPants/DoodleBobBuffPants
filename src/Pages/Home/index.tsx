@@ -21,11 +21,11 @@ const Home = () => {
             getPostNames().map(post => {
               const match = post.match("posts/(\\d+)-(\\d+)-(\\d+)-(.+).md")!;
               const path = `/${match[1]}/${match[2]}/${match[3]}/${match[4]}`;
-              return <li key={post}><Link className="link" to={path}>{match[4].replaceAll("-", " ")}</Link></li>;
+              return <li className="link" key={post}><Link to={path}>{match[4].replaceAll("-", " ")}</Link></li>;
             })
           }
         </ul>
-        <li><Link className="link" to="/book-list">Books I have read</Link></li>
+        <li className="link"><Link to="/book-list">Books I have read</Link></li>
       </ul>
     </div>
     <LinkedIn className="socials" link="https://www.linkedin.com/in/ajay-ahir-924581172/"/>

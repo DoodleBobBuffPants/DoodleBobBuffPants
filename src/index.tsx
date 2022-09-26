@@ -4,12 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "Pages/Home";
 import { Books } from "Pages/Books";
 import { Post } from "Pages/Post";
+import { getTheme } from "Pages/Base/Themes";
 import "./index.scss"
-
-const getTheme = () => {
-  const currentMonth = new Date().getMonth() + 1;
-  return currentMonth === 12 ? "christmas" : currentMonth > 5 && currentMonth < 9 ? "summer" : "halloween";
-}
 
 const root = document.getElementById("root")!;
 root.classList.add(getTheme());

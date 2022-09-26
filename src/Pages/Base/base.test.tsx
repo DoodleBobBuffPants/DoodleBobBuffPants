@@ -12,3 +12,8 @@ it('Renders children', () => {
   const result = render(<Base children={<div title="test" />} />, { wrapper: BrowserRouter });
   expect(result.getByTitle("test")).toBeDefined();
 });
+
+it('Renders the theme', () => {
+  const result = render(<Base children={<div />} />, { wrapper: BrowserRouter });
+  expect(result.queryByAltText("")).toBeDefined();
+});

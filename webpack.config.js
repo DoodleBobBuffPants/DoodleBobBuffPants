@@ -11,7 +11,8 @@ module.exports = {
       { test: /\.tsx?$/, use: 'ts-loader', exclude: /node_modules/ },
       { test: /\.css$/, use: ["style-loader", "css-loader", "postcss-loader"] },
       { test: /\.s[ac]ss$/, use: ["style-loader", "css-loader", "sass-loader", "postcss-loader"] },
-      { test: /\.md$/, loader: "file-loader", options: { name: "posts/[name].[ext]" } }
+      { test: /\.md$/, loader: "file-loader", options: { name: "posts/[name].[ext]" } },
+      { test: /\.gif$/, loader: "file-loader", options: { name: "gifs/[name].[ext]" } }
     ]
   },
   resolve: {

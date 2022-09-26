@@ -12,16 +12,19 @@
 
 .body {
   @apply grid grid-cols-3 divide-x divide-none mt-28;
-  >div {
+  >div:first-child {
+    @apply col-start-1 col-end-1;
+  }
+  >div:not(:first-child):not(:last-child) {
     @apply col-start-2 col-end-2;
   }
-  >div:nth-child(1) {
-    @apply col-start-1 col-end-1;
+  >div:last-child {
+    @apply col-start-3 col-end-3 row-start-1;
   }
 }
 
 li {
-  @apply list-disc;
+  @apply list-disc list-inside;
 }
 
 ::-webkit-scrollbar {
