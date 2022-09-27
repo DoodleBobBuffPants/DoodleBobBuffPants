@@ -28,6 +28,7 @@ module.exports = {
     host: "0.0.0.0",
     port: 3000,
     static: { directory: "./dist/" },
+    historyApiFallback: { index: '/index.html' },
     hot: true
   },
   optimization: { minimizer: [new TerserPlugin({ extractComments: false })] }
