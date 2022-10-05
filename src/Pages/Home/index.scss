@@ -2,6 +2,14 @@
   @apply flex justify-around;
 }
 
+.home-list {
+  @apply m-auto max-w-[40%];
+}
+
+.post-item {
+  @apply list-outside ml-5;
+}
+
 .profile-picture {
   @apply rounded-full;
 }

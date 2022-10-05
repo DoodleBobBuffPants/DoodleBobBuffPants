@@ -10,7 +10,7 @@ const Home = () => {
   return <Base>
     <div className="home">
       <img src="https://avatars2.githubusercontent.com/u/17652619?v=4&s=300" className="profile-picture" alt="profile-picture" />
-      <ul className="m-auto">
+      <ul className="home-list">
         <li>Projects</li>
         <ul>
           {projects.map(project => <li className="link" key={project.name}><a href={`https://github.com/DoodleBobBuffPants/${project.url}`} target="_blank">{project.name}</a></li>)}
@@ -21,7 +21,7 @@ const Home = () => {
             getPostNames().map(post => {
               const match = post.match("posts/(\\d+)-(\\d+)-(\\d+)-(.+).md")!;
               const path = `/${match[1]}/${match[2]}/${match[3]}/${match[4]}`;
-              return <li className="link" key={post}><Link to={path}>{match[4].replaceAll("-", " ")}</Link></li>;
+              return <li className="link post-item" key={post}><Link to={path}>{match[4].replaceAll("-", " ").replaceAll("_", " - ")}</Link></li>;
             })
           }
         </ul>

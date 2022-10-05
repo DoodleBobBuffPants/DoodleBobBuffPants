@@ -19,7 +19,7 @@ it('Renders posts', () => {
 
   getPostNames().forEach(post => {
     const match = post.match("posts/(\\d+)-(\\d+)-(\\d+)-(.+).md")!;
-    const link = result.getByText(match[4].replaceAll("-", " "));
+    const link = result.getByText(match[4].replaceAll("-", " ").replaceAll("_", " - "));
     expect(link).toBeDefined();
   });
 });
