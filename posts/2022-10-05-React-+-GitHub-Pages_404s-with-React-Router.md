@@ -94,7 +94,7 @@ the currently loaded page, the homepage, which has client side routing enabled. 
 render as desired!
 
 _Note: These scripts assume you don't make use of query parameters in your React app. If you do you can modify
-them to use a key e.g. `?redirect=${pathname}`._
+them to use a key e.g. `?redirect=${pathname}` instead of `?${pathname}`._
 
 _Note: The script element in the homepage must appear before the element that your React app renders to, most
 commonly the `<div>` given an id of `root`._
