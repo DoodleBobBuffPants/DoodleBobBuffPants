@@ -83,8 +83,8 @@ to it as a path if it exists. An example script element that achieves this is:
 <script type="text/javascript">
     const l = window.location;
     if (l.search && `${l.protocol}//${l.host}/${l.search}` === l.href) {
-        const p = l.search.substring(1);
-        window.history.replaceState(null, null, `${l.protocol}//${l.host}/${p}`);
+        const path = l.search.substring(1);
+        window.history.replaceState(null, null, `${l.protocol}//${l.host}/${path}`);
     }
 </script>
 ```
