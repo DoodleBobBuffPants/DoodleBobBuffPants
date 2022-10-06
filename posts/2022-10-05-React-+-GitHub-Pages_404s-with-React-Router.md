@@ -3,7 +3,7 @@
 Deploying your React app to GitHub pages is a great way to learn about and share them.
 You can do many things, for example creating mini portfolio sites such as this one!
 It's a process that is already well documented and you can find an example piece of
-documentation in the [References](#references).
+documentation in the _References_.
 
 A common library to use with React apps is React Router which enables client side routing.
 You can read more about React Router [here](https://reactrouter.com/en/main/start/overview)
