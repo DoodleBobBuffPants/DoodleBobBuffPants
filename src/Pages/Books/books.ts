@@ -16,6 +16,7 @@
   { title: "Radical Candor", edition: "OL17803541W", cover: 9402323 },
   { title: "Staff Engineer", edition: "OL24199831W", cover: 10637714 },
   { title: "The Manager's Path", edition: "OL19860807W", cover: 8667305 },
+  { title: "The Mythical Man Month", edition: "OL3510570W", cover: 10653425 },
   { title: "The Phoenix Project", edition: "OL16806686W", cover: 8090274 },
   { title: "The Unicorn Project", edition: "OL28014943M", cover: 9398045 }
 ];
