@@ -12,6 +12,7 @@
   { title: "Gamestorming", edition: "OL15359393W", cover: 6463746 },
   { title: "More Effective C#", edition: "OL19545691W", cover: 8511863 },
   { title: "Multipliers", edition: "OL20793797W", cover: 10087916 },
+  { title: "Pragmatic Programmer", edition: "OL27533114M", cover: 10143650 },
   { title: "Radical Candor", edition: "OL17803541W", cover: 9402323 },
   { title: "Staff Engineer", edition: "OL24199831W", cover: 10637714 },
   { title: "The Manager's Path", edition: "OL19860807W", cover: 8667305 },
