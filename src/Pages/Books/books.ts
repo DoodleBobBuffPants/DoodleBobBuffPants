@@ -21,5 +21,6 @@
   { title: "The Manager's Path", edition: "OL19860807W", cover: 8667305 },
   { title: "The Mythical Man Month", edition: "OL3510570W", cover: 10653425 },
   { title: "The Phoenix Project", edition: "OL16806686W", cover: 8090274 },
-  { title: "The Unicorn Project", edition: "OL28014943M", cover: 9398045 }
+  { title: "The Unicorn Project", edition: "OL28014943M", cover: 9398045 },
+  { title: "Weapons of Math Destruction", edition: "OL17862181W", cover: 12879121 }
 ];
