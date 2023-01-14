@@ -10,6 +10,7 @@
   { title: "Effective Java", edition: "OL25783599W", cover: 12603105 },
   { title: "Fundamentals of Software Architecture", edition: "OL20872782W", cover: 10193363 },
   { title: "Gamestorming", edition: "OL15359393W", cover: 6463746 },
+  { title: "How to Think Like a Mathematician", edition: "OL12027607W", cover: 8660185 },
   { title: "More Effective C#", edition: "OL19545691W", cover: 8511863 },
   { title: "Multipliers", edition: "OL20793797W", cover: 10087916 },
   { title: "Pragmatic Programmer", edition: "OL27533114M", cover: 10143650 },
