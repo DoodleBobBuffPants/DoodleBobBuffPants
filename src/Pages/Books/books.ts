@@ -5,6 +5,7 @@
   { title: "Antipatterns", edition: "OL16534596W", cover: 7077751 },
   { title: "C# in Depth", edition: "OL8955989W", cover: 3063781 },
   { title: "Clean Code", edition: "OL17618370W", cover: 5547794 },
+  { title: "Crucial Conversations", edition: "OL33830276M", cover: 12383003 },
   { title: "Design It!", edition: "OL19542960W", cover: 8509028 },
   { title: "Design Patterns", edition: "OL21406710W", cover: 1754351 },
   { title: "Effective Java", edition: "OL25783599W", cover: 12603105 },
