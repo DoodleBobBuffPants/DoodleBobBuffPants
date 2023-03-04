@@ -18,6 +18,8 @@ jobs:
           node-version: 18
       - name: Install
         run: npm i --no-package-lock
+      - name: Lint
+        run: npm run lint:check
       - name: Test
         run: npm run test
       - name: Deploy
