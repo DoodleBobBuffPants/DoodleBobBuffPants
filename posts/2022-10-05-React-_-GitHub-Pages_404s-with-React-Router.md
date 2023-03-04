@@ -70,9 +70,9 @@ path as a query parameter. An example script element that achieves this is:
 
 ```html
 <script type="text/javascript">
-    const l = window.location;
-    const pathname = l.pathname.startsWith("/") ? l.pathname.substring(1) : l.pathname;
-    window.location = `${l.protocol}//${l.host}/?${pathname}`;
+  const l = window.location;
+  const pathname = l.pathname.startsWith("/") ? l.pathname.substring(1) : l.pathname;
+  window.location = `${l.protocol}//${l.host}/?${pathname}`;
 </script>
 ```
 
@@ -81,11 +81,11 @@ to it as a path if it exists. An example script element that achieves this is:
 
 ```html
 <script type="text/javascript">
-    const l = window.location;
-    if (l.search && `${l.protocol}//${l.host}/${l.search}` === l.href) {
-        const path = l.search.substring(1);
-        window.history.replaceState(null, null, `${l.protocol}//${l.host}/${path}`);
-    }
+  const l = window.location;
+  if (l.search && `${l.protocol}//${l.host}/${l.search}` === l.href) {
+    const path = l.search.substring(1);
+    window.history.replaceState(null, null, `${l.protocol}//${l.host}/${path}`);
+  }
 </script>
 ```
 

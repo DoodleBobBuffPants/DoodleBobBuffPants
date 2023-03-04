@@ -113,5 +113,6 @@ with this in mind, and providing them as separate modules for consumers to depen
 with testability of different logging implementations as an added benefit.
 
 #### References
+
 - [Understanding System Logger](https://dzone.com/articles/system-logger)
 - [System.LoggerFinder](https://docs.oracle.com/javase/9/docs/api/java/lang/System.LoggerFinder.html)
