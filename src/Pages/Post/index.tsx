@@ -38,7 +38,8 @@ const Post = () => {
 }
 
 const updatePost = (params : Params<string>, setPost : (post: string) => void) => {
-  fetch(`/posts/${params.year}-${params.month}-${params.day}-${params.title}.md`)
+  const base = import.meta.env.DEV ? "Pages/Post/Posts" : "posts";
+  fetch(`/${base}/${params.year}-${params.month}-${params.day}-${params.title}.md`)
     .then(result => result.text())
     .then(text => setPost(text))
     .catch(error => console.error(error));
