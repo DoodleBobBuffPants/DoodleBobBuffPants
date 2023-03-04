@@ -5,7 +5,7 @@ import { Home } from "Pages/Home";
 import { Books } from "Pages/Books";
 import { Post } from "Pages/Post";
 import { getTheme } from "Pages/Base/Themes";
-import "./index.scss"
+import "./index.scss";
 
 const root = document.getElementById("root")!;
 root.classList.add(getTheme());
@@ -13,9 +13,9 @@ ReactDOM.createRoot(root).render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/book-list" element={<Books />}/>
-      <Route path="/:year/:month/:day/:title" element={<Post />}/>
-      <Route path="*" element={<Navigate to="/" />}/>
+      <Route path="/book-list" element={<Books />} />
+      <Route path="/:year/:month/:day/:title" element={<Post />} />
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   </BrowserRouter>
 );

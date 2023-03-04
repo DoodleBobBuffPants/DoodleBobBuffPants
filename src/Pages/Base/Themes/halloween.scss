@@ -2,7 +2,9 @@
   @apply text-orange-400 font-bold;
 }
 .halloween {
-  .background, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {
+  .background,
+  ::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-track {
     @apply bg-gradient-to-br from-orange-900 via-neutral-800 to-neutral-900;
   }
   ::-webkit-scrollbar-track {
@@ -32,7 +34,8 @@
     code {
       @apply text-gray-400;
     }
-    li, a {
+    li,
+    a {
       @apply text-orange-600;
     }
   }

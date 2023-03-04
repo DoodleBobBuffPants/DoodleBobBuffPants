@@ -3,5 +3,5 @@ export const projects = [
   { name: "WhatIfDriver", url: "WhatIfDriver" },
   { name: "Database", url: "Database" },
   { name: "Database#", url: "DatabaseSharp" },
-  { name: "This website (React)", url: "DoodleBobBuffPants.github.io" }
+  { name: "This website (React)", url: "DoodleBobBuffPants.github.io" },
 ];

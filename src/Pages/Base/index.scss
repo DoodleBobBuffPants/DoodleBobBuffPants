@@ -1,6 +1,6 @@
-@import './Themes/summer.scss';
-@import './Themes/halloween.scss';
-@import './Themes/christmas.scss';
+@import "./Themes/summer.scss";
+@import "./Themes/halloween.scss";
+@import "./Themes/christmas.scss";
 
 .background {
   @apply w-screen min-h-screen pt-28;
@@ -12,13 +12,13 @@
 
 .body {
   @apply grid grid-cols-3 divide-x divide-none mt-28;
-  >div:first-child {
+  > div:first-child {
     @apply col-start-1 col-end-1;
   }
-  >div:not(:first-child):not(:last-child) {
+  > div:not(:first-child):not(:last-child) {
     @apply col-start-2 col-end-2;
   }
-  >div:last-child {
+  > div:last-child {
     @apply col-start-3 col-end-3 row-start-1;
   }
 }
@@ -30,6 +30,7 @@ li {
 ::-webkit-scrollbar {
   @apply hidden;
 }
-::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track {
   @apply rounded-xl;
 }

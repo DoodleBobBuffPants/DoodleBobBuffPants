@@ -2,7 +2,9 @@
   @apply text-white font-bold;
 }
 .summer {
-  .background, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {
+  .background,
+  ::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-track {
     @apply bg-gradient-to-br from-sky-400 via-sky-500 to-yellow-400;
   }
   ::-webkit-scrollbar-track {

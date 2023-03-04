@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import { render, screen } from '@testing-library/react';
-import { Books } from './index';
+import { render, screen } from "@testing-library/react";
+import { Books } from "./index";
 import { books } from "./books";
 
-it('Renders all books', () => {
+it("Renders all books", () => {
   render(<Books />, { wrapper: BrowserRouter });
 
   books.forEach(book => {

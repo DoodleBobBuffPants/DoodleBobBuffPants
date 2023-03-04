@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import { render, screen } from '@testing-library/react';
-import { Home, getPostNames } from './index';
+import { render, screen } from "@testing-library/react";
+import { Home, getPostNames } from "./index";
 import { projects } from "./projects";
 
-it('Renders projects', () => {
+it("Renders projects", () => {
   render(<Home />, { wrapper: BrowserRouter });
 
   projects.forEach(project => {
@@ -14,7 +14,7 @@ it('Renders projects', () => {
   });
 });
 
-it('Renders posts', () => {
+it("Renders posts", () => {
   render(<Home />, { wrapper: BrowserRouter });
 
   getPostNames().forEach(post => {
@@ -24,7 +24,7 @@ it('Renders posts', () => {
   });
 });
 
-it('Renders socials', () => {
+it("Renders socials", () => {
   render(<Home />, { wrapper: BrowserRouter });
   expect(screen.getByTitle("linkedin")).toBeDefined();
 });

@@ -7,31 +7,43 @@ import { projects } from "./projects";
 import "./index.scss";
 
 const Home = () => {
-  return <Base>
-    <div className="home">
-      <img src="https://avatars2.githubusercontent.com/u/17652619?v=4&s=300" className="profile-picture" alt="profile-picture" />
-      <ul className="home-list">
-        <li>Projects</li>
-        <ul>
-          {projects.map(project => <li className="link" key={project.name}><a href={`https://github.com/DoodleBobBuffPants/${project.url}`} target="_blank">{project.name}</a></li>)}
-        </ul>
-        <li>Posts</li>
-        <ul>
-          {
-            getPostNames().map(post => {
+  return (
+    <Base>
+      <div className="home">
+        <img src="https://avatars2.githubusercontent.com/u/17652619?v=4&s=300" className="profile-picture" alt="profile-picture" />
+        <ul className="home-list">
+          <li>Projects</li>
+          <ul>
+            {projects.map(project => (
+              <li className="link" key={project.name}>
+                <a href={`https://github.com/DoodleBobBuffPants/${project.url}`} target="_blank">
+                  {project.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <li>Posts</li>
+          <ul>
+            {getPostNames().map(post => {
               const match = post.match("(?!posts/)?(\\d+)-(\\d+)-(\\d+)-(.+).md")!;
               const path = `/${match[1]}/${match[2]}/${match[3]}/${match[4]}`;
-              return <li className="link post-item" key={post}><Link to={path}>{match[4].replaceAll("-", " ").replaceAll("_", " - ")}</Link></li>;
-            })
-          }
+              return (
+                <li className="link post-item" key={post}>
+                  <Link to={path}>{match[4].replaceAll("-", " ").replaceAll("_", " - ")}</Link>
+                </li>
+              );
+            })}
+          </ul>
+          <li className="link">
+            <Link to="/book-list">Books I have read</Link>
+          </li>
         </ul>
-        <li className="link"><Link to="/book-list">Books I have read</Link></li>
-      </ul>
-    </div>
-    <LinkedIn className="socials" link="https://www.linkedin.com/in/ajay-ahir-924581172/"/>
-  </Base>
-}
+      </div>
+      <LinkedIn className="socials" link="https://www.linkedin.com/in/ajay-ahir-924581172/" />
+    </Base>
+  );
+};
 
-const getPostNames = () : string[] => Object.values(posts);
+const getPostNames = (): string[] => Object.values(posts);
 
 export { Home, getPostNames };
