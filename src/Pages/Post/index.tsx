@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import { Params, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus as dark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import java from "react-syntax-highlighter/dist/esm/languages/prism/java";
 import { Base } from "Pages/Base";
 import "./index.scss";
+
+SyntaxHighlighter.registerLanguage("java", java);
 
 const Post = () => {
   const params = useParams();

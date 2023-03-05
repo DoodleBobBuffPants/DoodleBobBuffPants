@@ -9,11 +9,10 @@ export default defineConfig({
   build: {
     outDir: "../dist",
     emptyOutDir: true,
-    chunkSizeWarningLimit: 1024,
     rollupOptions: {
       output: {
         entryFileNames: "[name].js",
-        chunkFileNames: "[name][extension]",
+        chunkFileNames: "[name].js",
         assetFileNames: asset => `${asset.name?.endsWith(".md") ? "posts/" : asset.name?.endsWith(".gif") ? "gifs/" : ""}[name][extname]`,
       },
     },
