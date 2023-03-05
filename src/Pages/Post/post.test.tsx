@@ -1,4 +1,3 @@
-import React from "react";
 import { Route, Routes, MemoryRouter } from "react-router-dom";
 import { render, waitFor } from "@testing-library/react";
 import { getPostNames } from "Pages/Home";

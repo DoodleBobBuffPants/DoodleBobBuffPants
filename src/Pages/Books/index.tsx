@@ -1,4 +1,3 @@
-import React from "react";
 import { Base } from "Pages/Base";
 import { books } from "./books";
 import "./index.scss";

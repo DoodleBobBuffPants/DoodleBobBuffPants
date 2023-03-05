@@ -1,4 +1,3 @@
-import React from "react";
 import skeleton from "./GIFs/skeleton.gif";
 import sun from "./GIFs/sun.gif";
 import christmas from "./GIFs/christmas.gif";

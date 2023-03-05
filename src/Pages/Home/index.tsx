@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { LinkedIn } from "Icons/LinkedIn";
 import { Base } from "Pages/Base";
