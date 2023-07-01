@@ -17,14 +17,20 @@ jobs:
         with:
           node-version: 18
       - name: Install
-        run: npm i --no-package-lock
+        run: yarn install --frozen-lockfile
       - name: Lint
-        run: npm run lint:check
+        run: yarn lint:check
       - name: Test
-        run: npm run test
+        run: yarn test
+      - name: Build
+        run: yarn build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
+      - name: Add .nojekyll
+        run: touch out/.nojekyll
       - name: Deploy
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+          yarn deploy -u "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
