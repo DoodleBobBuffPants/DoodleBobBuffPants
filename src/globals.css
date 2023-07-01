@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* HTML */
+body {
+  @apply min-h-screen pt-28;
+}
+
 /* Steam Achievements */
 .profile_customization_header {
   @apply text-center text-2xl pb-2;

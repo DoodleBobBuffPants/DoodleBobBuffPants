@@ -1,6 +1,3 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
 import IconButton from "@mui/material/IconButton";
 import useBasePath from "./hooks/useBasePath";
 import LinkedIn from "./icons/LinkedIn";
@@ -10,7 +7,7 @@ import { getPosts } from "./posts";
 const Home = () => (
   <>
     <div className="flex justify-around">
-      <Image src={useBasePath("/assets/avatar.jpg")} width="300" height="300" alt="avatar" className="rounded-full" />
+      <img src={useBasePath("assets/avatar.jpg")} width="300" height="300" alt="avatar" className="rounded-full" />
 
       <ul className="m-auto max-w-[40%]">
         <li className="list-disc list-outside">Projects</li>
@@ -28,13 +25,13 @@ const Home = () => (
         <ul className="ml-5 mb-5">
           {getPosts().map(post => (
             <li className="list-disc list-outside hover:underline" key={post.title}>
-              <Link href={`./posts/${post.route}`}>{post.title}</Link>
+              <a href={`./posts/${post.route}`}>{post.title}</a>
             </li>
           ))}
         </ul>
 
         <li className="list-disc list-outside hover:underline">
-          <Link href="./book-list">Books I have read</Link>
+          <a href="./book-list">Books I have read</a>
         </li>
       </ul>
     </div>

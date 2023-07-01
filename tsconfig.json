@@ -14,12 +14,8 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "types": ["vite/client", "vitest/globals"]
   },
-  "include": ["**/*.ts", "**/*.tsx", "out/types/**/*.ts", ".next/types/**/*.ts"],
+  "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }

@@ -1,8 +1,6 @@
 .idea
 .fleet
 
-.next
-
 node_modules
 
 out

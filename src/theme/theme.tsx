@@ -1,12 +1,10 @@
-"use client";
-import Image from "next/image";
 import { createTheme } from "@mui/material/styles";
 import useBasePath from "../hooks/useBasePath";
 
 const SeasonalImage = () => {
   const currentTheme = getTheme();
-  const image = currentTheme === christmas ? "/gifs/christmas.gif" : currentTheme === summer ? "/gifs/sun.gif" : "/gifs/skeleton.gif";
-  return <Image src={useBasePath(image)} width="200" height="300" alt="seasonal-image" className="rounded-3xl" />;
+  const image = currentTheme === christmas ? "gifs/christmas.gif" : currentTheme === summer ? "gifs/sun.gif" : "gifs/skeleton.gif";
+  return <img src={useBasePath(image)} width="200" height="300" alt="seasonal-image" className="rounded-3xl" />;
 };
 
 const getTheme = () => {

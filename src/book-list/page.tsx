@@ -1,5 +1,3 @@
-"use client";
-import Image from "next/image";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import books from "./books";
@@ -11,7 +9,7 @@ const Books = () => (
       {books.map(book => (
         <a href={`https://openlibrary.org/books/${book.edition}`} target="_blank" className="text-center inline-block mr-12" key={book.edition}>
           <ImageListItem>
-            <Image src={`https://covers.openlibrary.org/b/id/${book.cover}-L.jpg`} width="200" height="300" alt={book.title} className="mb-5" />
+            <img src={`https://covers.openlibrary.org/b/id/${book.cover}-L.jpg`} width="200" height="300" alt={book.title} className="mb-5" />
           </ImageListItem>
         </a>
       ))}

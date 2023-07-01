@@ -25,9 +25,7 @@ jobs:
       - name: Build
         run: yarn build
         env:
-          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
-      - name: Add .nojekyll
-        run: touch out/.nojekyll
+          BASE_PATH: /${{ github.event.repository.name }}/
       - name: Deploy
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
