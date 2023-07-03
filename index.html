@@ -9,9 +9,9 @@
     <title>DoodleBobBuffPants</title>
     <script type="text/javascript">
       const l = window.location;
-      if (l.search && `${l.protocol}//${l.host}/${l.search}` === l.href) {
+      if (l.search && `${l.protocol}//${l.host}/DoodleBobBuffPants/${l.search}` === l.href) {
         const p = l.search.substring(1);
-        window.history.replaceState(null, null, `${l.protocol}//${l.host}/${p}`);
+        window.history.replaceState(null, null, `${l.protocol}//${l.host}/DoodleBobBuffPants/${p}`);
       }
     </script>
     <script type="module" crossorigin src="/DoodleBobBuffPants/index.js"></script>
