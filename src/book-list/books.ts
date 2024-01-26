@@ -14,6 +14,7 @@
   { title: "How to Think Like a Mathematician", edition: "OL12027607W", cover: 8660185 },
   { title: "More Effective C#", edition: "OL19545691W", cover: 8511863 },
   { title: "Multipliers", edition: "OL20793797W", cover: 10087916 },
+  { title: "Observability Engineering", edition: "OL25337316W", cover: 12736555 },
   { title: "Pragmatic Programmer", edition: "OL27533114M", cover: 10143650 },
   { title: "Radical Candor", edition: "OL17803541W", cover: 9402323 },
   { title: "Software Engineering at Google", edition: "OL30370705M", cover: 10450993 },
