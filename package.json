@@ -12,6 +12,7 @@
     "lint:check": "eslint --ext .ts,.tsx src && prettier --check .",
     "deploy": "gh-pages -t -d out -b gh-pages"
   },
+  "packageManager": "yarn@4.3.0",
   "devDependencies": {
     "@emotion/react": "11.11.1",
     "@emotion/styled": "11.11.0",
