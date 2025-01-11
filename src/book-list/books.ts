@@ -24,6 +24,7 @@
   { title: "The Manager's Path", edition: "OL19860807W", cover: 8667305 },
   { title: "The Mythical Man Month", edition: "OL3510570W", cover: 10653425 },
   { title: "The Phoenix Project", edition: "OL16806686W", cover: 8090274 },
+  { title: "The Ultimate Guide to Great Mentorship", edition: "OL46514389M", cover: 9987785 },
   { title: "The Unicorn Project", edition: "OL28014943M", cover: 9398045 },
   { title: "Weapons of Math Destruction", edition: "OL17862181W", cover: 12879121 },
   { title: "Working Effectively with Legacy Code", edition: "OL5742702W", cover: 86561 },
