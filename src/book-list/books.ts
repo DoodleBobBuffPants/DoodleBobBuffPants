@@ -20,6 +20,7 @@
   { title: "Software Engineering at Google", edition: "OL30370705M", cover: 10450993 },
   { title: "Staff Engineer", edition: "OL24199831W", cover: 10637714 },
   { title: "Team Topologies", edition: "OL28745421M", cover: 10354937 },
+  { title: "The Coaching Habit", edition: "OL28108064M", cover: 9669674 },
   { title: "The Loudest Duck", edition: "OL23735393M", cover: 9987785 },
   { title: "The Manager's Path", edition: "OL19860807W", cover: 8667305 },
   { title: "The Mythical Man Month", edition: "OL3510570W", cover: 10653425 },
