@@ -2481,7 +2481,7 @@ __metadata:
     remark-prism: "npm:1.3.6"
     tailwindcss: "npm:3.3.2"
     typescript: "npm:5.1.6"
-    vite: "npm:4.5.6"
+    vite: "npm:4.5.14"
     vite-tsconfig-paths: "npm:4.2.0"
     vitest: "npm:0.32.2"
   languageName: unknown
@@ -7080,9 +7080,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:4.5.6":
-  version: 4.5.6
-  resolution: "vite@npm:4.5.6"
+"vite@npm:4.5.14":
+  version: 4.5.14
+  resolution: "vite@npm:4.5.14"
   dependencies:
     esbuild: "npm:^0.18.10"
     fsevents: "npm:~2.3.2"
@@ -7116,7 +7116,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10c0/26b3e247219a38c2815302b2e003a64aa2f37d1884693906914b909bb7f0275f234a6b465bc8c587b1d58ed00c8dc52887722e05f0c298bb2e5657e61cda5829
+  checksum: 10c0/58fdbb7e14650f78ebe290bb67f873900b914cee906c7367ad1c9786fb323ec60c3f085447341953b5e411a17703f86ed33723b31f98778d94f0ead06370b306
   languageName: node
   linkType: hard
 
