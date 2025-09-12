@@ -42,7 +42,7 @@
     "typescript": "5.1.6",
     "vite": "5.4.20",
     "vite-tsconfig-paths": "4.2.0",
-    "vitest": "0.32.2"
+    "vitest": "3.2.4"
   },
   "dependencies": {
     "@mui/material": "5.13.6",
