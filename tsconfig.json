@@ -1,18 +1,17 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": ["DOM", "ESNext"],
-    "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "Node",
-    "jsx": "preserve",
+    "lib": ["DOM", "ESNext"],
+    "jsx": "react-jsx",
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
     "strict": true,
-    "incremental": true,
     "noEmit": true,
     "allowJs": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "types": ["vite/client", "vitest/globals"]
   },
