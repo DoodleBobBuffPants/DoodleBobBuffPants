@@ -3,7 +3,7 @@ const projects = [
   { name: "WhatIfDriver", url: "WhatIfDriver" },
   { name: "Database", url: "Database" },
   { name: "Database#", url: "DatabaseSharp" },
-  { name: "This website (NextJS)", url: "DoodleBobBuffPants.github.io" },
+  { name: "This website", url: "DoodleBobBuffPants.github.io" },
 ];
 
 export default projects;
