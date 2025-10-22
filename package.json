@@ -48,7 +48,7 @@
     "vitest": "3.2.4"
   },
   "dependencies": {
-    "@mui/material": "5.18.0",
+    "@mui/material": "7.3.4",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-router-dom": "7.9.4"

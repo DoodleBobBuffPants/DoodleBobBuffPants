@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { StyledEngineProvider, ThemeProvider as MuiThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import Grid from "@mui/material/Unstable_Grid2";
+import Grid from "@mui/material/Grid";
 import { basePath } from "../hooks/useBasePath";
 import SteamAchievements from "./SteamAchievements";
 import { getTheme, SeasonalImage } from "./theme";
@@ -16,13 +16,13 @@ const ThemeProvider = ({ children }: { children: ReactNode }) => (
       </a>
 
       <Grid container spacing={6} alignItems="start" className="m-0">
-        <Grid xs={4} className="flex justify-center">
+        <Grid size={4} className="flex justify-center">
           <SteamAchievements />
         </Grid>
 
-        <Grid xs={4}>{children}</Grid>
+        <Grid size={4}>{children}</Grid>
 
-        <Grid xs={4} className="flex justify-center">
+        <Grid size={4} className="flex justify-center">
           <SeasonalImage />
         </Grid>
       </Grid>
