@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import viteTsconfigPaths from "vite-tsconfig-paths";
 import prism from "remark-prism";
@@ -21,7 +22,7 @@ export default defineConfig(async () => {
       },
     },
     clearScreen: false,
-    plugins: [react(), viteTsconfigPaths(), mdx.default({ remarkPlugins: [prism] })],
+    plugins: [tailwindcss(), react(), viteTsconfigPaths(), mdx.default({ remarkPlugins: [prism] })],
     server: { host: "localhost", port: 3000, strictPort: true, open: true, base: process.env.BASE_PATH ?? "/" },
     test: { root: ".", include: ["**/*.tests.{ts,tsx}"], globals: true, environment: "jsdom", watch: false },
   };
