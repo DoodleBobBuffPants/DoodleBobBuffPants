@@ -28,7 +28,7 @@ export default [
     },
     rules: {
       // eslint rules
-      eqeqeq: ["warn", "smart"],
+      eqeqeq: ["error", "smart"],
       "no-restricted-syntax": [
         "error",
         {
