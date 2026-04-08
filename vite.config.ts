@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import prism from "remark-prism";
+import checker from "vite-plugin-checker";
 
 // noinspection JSUnusedGlobalSymbols
 export default defineConfig(async () => {
@@ -20,7 +21,7 @@ export default defineConfig(async () => {
         },
       },
     },
-    plugins: [tailwindcss(), react(), mdx.default({ remarkPlugins: [prism] })],
+    plugins: [tailwindcss(), react(), mdx.default({ remarkPlugins: [prism] }), checker({ typescript: { root: "." } })],
     server: { host: "localhost", port: 3000, strictPort: true, open: true, base: process.env.BASE_PATH ?? "/" },
     test: { root: ".", include: ["**/*.tests.{ts,tsx}"], globals: true, environment: "jsdom", watch: false },
   };

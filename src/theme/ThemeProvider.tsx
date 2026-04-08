@@ -15,7 +15,7 @@ const ThemeProvider = ({ children }: { children: ReactNode }) => (
         <h1 className="text-center text-4xl font-bold underline decoration-wavy mb-28">DoodleBobBuffPants</h1>
       </a>
 
-      <Grid container spacing={6} alignItems="start" className="m-0">
+      <Grid container spacing={6} sx={{ alignItems: "start" }} className="m-0">
         <Grid size={4} className="flex justify-center">
           <SteamAchievements />
         </Grid>
