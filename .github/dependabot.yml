@@ -5,10 +5,13 @@ updates:
     directory: "/"
     schedule:
       interval: "semiannually"
+    groups:
+      dependencies:
+        patterns: ["*"]
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "semiannually"
     groups:
-      react:
-        patterns: ["react", "react-dom"]
+      dependencies:
+        patterns: ["*"]
