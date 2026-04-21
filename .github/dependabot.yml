@@ -4,11 +4,11 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "quarterly"
+      interval: "semiannually"
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "quarterly"
+      interval: "semiannually"
     groups:
       react:
         patterns: ["react", "react-dom"]
