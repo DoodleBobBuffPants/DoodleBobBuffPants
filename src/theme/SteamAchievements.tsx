@@ -12,7 +12,7 @@ const SteamAchievements = () => {
 };
 
 const updateAchievements = (setAchievements: (achievements?: Element) => void) => {
-  fetch("https://api.allorigins.win/get?url=https://steamcommunity.com/id/MyCharIsHard/")
+  fetch(`https://api.allorigins.win/get?url=${encodeURIComponent("https://steamcommunity.com/id/MyCharIsHard/")}`)
     .then(result => result.json())
     .then(json => setAchievements(getAchievementsFromHtml(json.contents)))
     .catch(error => console.error(error));
