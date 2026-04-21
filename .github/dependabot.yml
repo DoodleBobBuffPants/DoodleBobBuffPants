@@ -9,3 +9,6 @@ updates:
     directory: "/"
     schedule:
       interval: "quarterly"
+    groups:
+      react:
+        patterns: ["react", "react-dom"]
