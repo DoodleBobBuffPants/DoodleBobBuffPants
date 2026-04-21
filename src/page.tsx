@@ -7,7 +7,7 @@ import { getPosts } from "./posts";
 const Home = () => (
   <>
     <div className="flex justify-around">
-      <img src={useBasePath("assets/avatar.jpg")} width="300" height="300" alt="avatar" className="rounded-full" />
+      <img src={useBasePath("assets/avatar.jpg")} alt="avatar" className="w-80 h-80 rounded-full" />
 
       <ul className="m-auto max-w-[40%]">
         <li className="list-disc list-outside">Projects</li>
