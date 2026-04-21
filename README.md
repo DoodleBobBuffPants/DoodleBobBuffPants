@@ -1,4 +1,4 @@
-<h1><a href="https://doodlebobbuffpants.github.io/DoodleBobBuffPants" target="_blank" rel="noopener noreferrer">DoodleBobBuffPants</a></h1>
+# [DoodleBobBuffPants](https://doodlebobbuffpants.github.io/DoodleBobBuffPants)
 
 [![CodeQL](https://github.com/DoodleBobBuffPants/DoodleBobBuffPants/actions/workflows/codeql.yml/badge.svg)](https://github.com/DoodleBobBuffPants/DoodleBobBuffPants/actions/workflows/codeql.yml)
 [![Build](https://github.com/DoodleBobBuffPants/DoodleBobBuffPants/actions/workflows/build.yml/badge.svg)](https://github.com/DoodleBobBuffPants/DoodleBobBuffPants/actions/workflows/build.yml)
