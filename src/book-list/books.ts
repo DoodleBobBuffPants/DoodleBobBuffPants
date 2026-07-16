@@ -9,6 +9,7 @@
   { title: "Design It!", edition: "OL19542960W", cover: 8509028 },
   { title: "Design Patterns", edition: "OL21406710W", cover: 1754351 },
   { title: "Effective Java", edition: "OL25783599W", cover: 12603105 },
+  { title: "Frictionless", edition: "OL61392798M", cover: "" },
   { title: "Fundamentals of Software Architecture", edition: "OL20872782W", cover: 10193363 },
   { title: "Gamestorming", edition: "OL15359393W", cover: 6463746 },
   { title: "How to Think Like a Mathematician", edition: "OL12027607W", cover: 8660185 },
