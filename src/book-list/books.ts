@@ -13,6 +13,7 @@
   { title: "Fundamentals of Software Architecture", edition: "OL20872782W", cover: 10193363 },
   { title: "Gamestorming", edition: "OL15359393W", cover: 6463746 },
   { title: "How to Think Like a Mathematician", edition: "OL12027607W", cover: 8660185 },
+  { title: "Leadership Styles", edition: "OL51703591M", cover: "" },
   { title: "More Effective C#", edition: "OL19545691W", cover: 8511863 },
   { title: "Multipliers", edition: "OL20793797W", cover: 10087916 },
   { title: "Observability Engineering", edition: "OL25337316W", cover: 12736555 },
