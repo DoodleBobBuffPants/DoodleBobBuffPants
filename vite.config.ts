@@ -19,6 +19,8 @@ export default defineConfig(async () => {
           entryFileNames: "[name].js",
           chunkFileNames: "[name].js",
         },
+        checks: { pluginTimings: false },
+        experimental: { attachDebugInfo: "none" },
       },
     },
     plugins: [tailwindcss(), react(), mdx.default({ remarkPlugins: [prism] }), checker({ typescript: { root: "." } })],
