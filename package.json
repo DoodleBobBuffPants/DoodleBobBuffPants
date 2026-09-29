@@ -13,7 +13,7 @@
     "lint:check": "eslint --ext .ts,.tsx src && prettier --check .",
     "deploy": "gh-pages -t -d out -b gh-pages"
   },
-  "packageManager": "yarn@4.13.0",
+  "packageManager": "yarn@4.18.1",
   "dependencies": {
     "@mui/material": "9.4.0",
     "react": "19.3.0",
